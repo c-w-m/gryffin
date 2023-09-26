@@ -94,7 +94,7 @@ class NumpyGraph:
                 #post_temperature = 0.4
                 post_support = post_relevant
 
-                post_probs = 1. / (1. + np.exp(-post_support))
+                post_probs = 1. / (1. + np.exp(-post_support))  # FIXME RuntimeWarning: overflow encountered
                 post_probs_normed = post_probs / np.sum(post_probs)
 
                 # sample from relaxed one hot categorical

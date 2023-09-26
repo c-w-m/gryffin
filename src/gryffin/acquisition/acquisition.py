@@ -34,7 +34,7 @@ class Acquisition(Logger):
         self.acqs_min_max = None  # expected content is dict where key is batch_index, and dict[batch_index] = [min,max]
         self.acquisition_functions = {}  # to keep the AcquisitionFunction instances used
 
-        # figure out how many CPUs to use
+        # figure out how many CPUs to use  FIXME: limit to (max-1)
         if self.config.get('num_cpus') == 'all':
             self.num_cpus = multiprocessing.cpu_count()
         else:

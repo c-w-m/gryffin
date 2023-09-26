@@ -62,8 +62,8 @@ class AdamOptimizer:
 
     def reset(self):
         self.iterations = 0
-        self.ms = np.zeros(self.num_dims)
-        self.vs = np.zeros(self.num_dims)
+        self.ms = np.zeros(self.num_dims)  # FIXME DeprecationWarning: Passing None into shape arguments as an alias for ()
+        self.vs = np.zeros(self.num_dims)  # FIXME DeprecationWarning: Passing None into shape arguments as an alias for ()
 
     def set_func(self, func, select=None):
         """

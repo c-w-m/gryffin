@@ -296,7 +296,7 @@ class ConfigParser(Logger):
                 descriptors.append(spec['descriptors'])
             else:
                 descriptors.append(None)
-        return np.array(descriptors)
+        return np.array(descriptors, dtype=object)  # FIXME - added `dtype=object` to to handle ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (3,) + inhomogeneous part.
 
     @property
     def feature_process_constrained(self):
