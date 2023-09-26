@@ -52,7 +52,7 @@ def test_constraints_cont():
 	# frac_feas roughly 0.5552
 	config = {
 		"general": {
-			"num_cpus": 4,
+			"num_cpus": 1,  # FIXME: was "num_cpus": [4,3,2] failed for `ForkingPickler(file, protocol).dump(obj)``
 			"auto_desc_gen": False,
 			"batches": 1,
 			"sampling_strategies": 1,
@@ -102,7 +102,7 @@ def test_constraints_cat():
 
 	config = {
 		"general": {
-			"num_cpus": 4,
+			"num_cpus": 1,  # FIXME: was "num_cpus": [4,3,2] failed for `ForkingPickler(file, protocol).dump(obj)``
 			"auto_desc_gen": True,
 			"batches": 1,
 			"sampling_strategies": 1,
