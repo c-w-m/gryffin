@@ -1,0 +1,37 @@
+# ------------------------------------------------------------------
+# gryffin project
+# 2023-09-25
+# ------------------------------------------------------------------
+#
+# ==================================================================
+# gryffin virtual environment
+#
+# > cd C:\code\ghcwm\gryffin
+# > python310 -m venv .gryffin_dev310
+# > .\.gryffin_dev310\Scripts\activate.bat
+#
+# (.gryffin_dev310)> python -m pip install --upgrade pip
+#
+# (.gryffin_dev310)> pip install -e .
+
+# ------------------------------------------------------------------
+# from gryffin/pyproject.toml
+# oldest-supported-numpy
+# setuptools
+# wheel
+# cython
+
+# ------------------------------------------------------------------
+# refactored
+
+# test errors require
+#resource  # unix only
+# The module psutil provides a cross-platform library for monitoring and managing
+# running processes and system usage (CPU, memory, disks, network, sensors).
+
+# refactor using psutil
+#psutil
+
+# ------------------------------------------------------------------
+# test
+pytest

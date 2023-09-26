@@ -1,3 +1,6 @@
+# virtual environment
+.gryffin_dev310/
+
 # files created by planners
 outcmaes/
 *pyc
